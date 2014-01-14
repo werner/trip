@@ -1,4 +1,5 @@
 Trip::Application.routes.draw do
+  mount Rich::Engine => '/rich', :as => 'rich'
   resources :users
   resources :articles
   resources :sessions, only: [:new, :create, :destroy]

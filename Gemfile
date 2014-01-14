@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '4.0.2'
 gem 'paperclip', '~> 3.0'
+gem 'rich'
 
 group :development, :test do
   gem 'sqlite3'
