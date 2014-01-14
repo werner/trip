@@ -5,7 +5,7 @@
 	<%= f.file_field :hero %>
 	
 	<%= f.label :content %>
-	<%= f.text_area :content %>
+	<%= f.text_field :content, as: :rich %>
 	
 	<%= f.submit "Save", class: "" %>
 <% end %>
