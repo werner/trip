@@ -1,4 +1,5 @@
 Trip::Application.routes.draw do
+  Mercury::Engine.routes
   resources :users
   resources :articles
   resources :sessions, only: [:new, :create, :destroy]
