@@ -24,13 +24,6 @@
  *
  *= require_self
  *
- * Minimum jQuery requirements are 1.7
- *= require mercury/dependencies/jquery-1.7
- *
- * You can include the Rails jQuery ujs script here to get some nicer behaviors in modals, panels and lightviews when
- * using :remote => true within the contents rendered in them.
- * require jquery_ujs
- *
  * If you want to override Mercury functionality, you can do so in a custom file that binds to the mercury:loaded event,
  * or do so at the end of the current file (mercury.js).  There's an example that will help you get started.
  * require mercury_overrides
