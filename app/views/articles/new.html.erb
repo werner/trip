@@ -1,11 +1,9 @@
 <h1>New Article</h1>
-<%= form_for(@article) do |f| %>
+<%= semantic_form_for @article do |f| %>
 	<%= render 'shared/error_messages', object: f.object %>
-	<%= f.label :hero %>
-	<%= f.file_field :hero %>
-	
-	<%= f.label :content %>
-	<%= f.text_field :content, as: :rich %>
-	
+  <%= f.inputs do %>
+    <%= f.input :hero, as: :rich_picker %>
+    <%= f.input :content, as: :rich, :config => { :default_style => "myCrazyPaperclipStyle" } %>
+  <% end %>
 	<%= f.submit "Save", class: "" %>
 <% end %>
