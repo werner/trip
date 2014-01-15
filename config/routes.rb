@@ -1,4 +1,5 @@
 Trip::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   resources :users
   resources :articles
   resources :sessions, only: [:new, :create, :destroy]
